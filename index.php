@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +40,9 @@
 
     if($conn -> connect_error){
         die("Connection Failed".$conn -> connect_error);
-    }
+    }else{
+
+    
     
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $name = $_POST['name'];
@@ -83,6 +84,7 @@
                 echo "You are not eligiable for dawnload the Certificate";
             }
     }
+}
     
 ?>
 
